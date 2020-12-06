@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>JesseRussell</Authors>
+    <Product>LinqExtension</Product>
+    <Description>Just a small library that fills in one or two holes in the Linq library.</Description>
+  </PropertyGroup>
+
+</Project>
