@@ -5,6 +5,11 @@
     <Authors>JesseRussell</Authors>
     <Product>LinqExtension</Product>
     <Description>Just a small library that fills in one or two holes in the Linq library.</Description>
+    <PackageProjectUrl>https://github.com/JesseRussell411/JesseRussell.LinqExtension</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JesseRussell411/JesseRussell.LinqExtension</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Linq Enumerable Type TypeArray</PackageTags>
+    <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
