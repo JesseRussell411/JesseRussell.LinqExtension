@@ -9,5 +9,6 @@ namespace JesseRussell.LinqExtension
         public static IEnumerable<T> Enumerate<T>(this T item) => new MonoEnu<T>(item);
         public static IEnumerable<Type> GetParents(this Type self) => self.BaseType.Enumerate().Concat(self.GetInterfaces());
         public static IEnumerable<Type> GetSelfAndParents(this Type self) => self.Enumerate().Concat(self.GetParents());
+        public static ITypeArray ToTypeArray(this IEnumerable<Type> self) => new BigTypeArray(self.ToArray());
     }
 }
