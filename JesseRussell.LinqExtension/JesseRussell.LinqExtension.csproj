@@ -4,12 +4,17 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>JesseRussell</Authors>
     <Product>LinqExtension</Product>
-    <Description>Just a small library that fills in one or two holes in the Linq library.</Description>
+    <Description>Just a small library that fills in one or two holes in the Linq library.
+
+TypeArray: an easy way of instanciating a Type[] inline without having to call typeof over and over again.
+
+MonoEnu: An enumerable struct, whith a single element to enumerate over.</Description>
     <PackageProjectUrl>https://github.com/JesseRussell411/JesseRussell.LinqExtension</PackageProjectUrl>
     <RepositoryUrl>https://github.com/JesseRussell411/JesseRussell.LinqExtension</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Linq Enumerable Type TypeArray</PackageTags>
     <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
 </Project>
