@@ -11,6 +11,8 @@ namespace Debugging
         {
             Type[] ta = new Type[] { typeof(int), typeof(string), typeof(MonoEnu<int>)};
             Type[] ta = new TypeArray().ToArray();
+
+            ITypeArray ita = new Type[] { typeof(int), typeof(double) }.ToTypeArray();
         }
     }
 }

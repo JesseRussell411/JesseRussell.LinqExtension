@@ -6,6 +6,9 @@ using System.Linq;
 
 namespace JesseRussell.LinqExtension
 {
+    /// <summary>
+    /// immutable TypeArray of arbitrary size.
+    /// </summary>
     public class BigTypeArray : ITypeArray
     {
         public BigTypeArray(IEnumerable<Type> items) => this.items = items.ToArray();
@@ -19,8 +22,5 @@ namespace JesseRussell.LinqExtension
         public IEnumerator<Type> GetEnumerator() => (IEnumerator<Type>)items.GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator() => items.GetEnumerator();
-
-        public static implicit operator Type[](BigTypeArray bta) => bta.items.ToArray();
-        public static implicit operator BigTypeArray(Type[] ta) => new BigTypeArray(ta);
     }
 }
