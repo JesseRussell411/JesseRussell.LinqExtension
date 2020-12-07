@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace JesseRussell.LinqExtension;
+namespace JesseRussell.LinqExtension
 {
     /// <summary>
     /// Represents an indexable and enumerable array of Types.

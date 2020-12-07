@@ -12,6 +12,7 @@ namespace JesseRussell.LinqExtension
     public class BigTypeArray : ITypeArray
     {
         public BigTypeArray(IEnumerable<Type> items) => this.items = items.ToArray();
+        public BigTypeArray() => this.items = new Type[0];
         internal BigTypeArray(Type[] items) => this.items = items;
 
         private readonly Type[] items;
@@ -19,7 +20,13 @@ namespace JesseRussell.LinqExtension
 
         public int Length => items.Length;
 
-        public IEnumerator<Type> GetEnumerator() => (IEnumerator<Type>)items.GetEnumerator();
+        public IEnumerator<Type> GetEnumerator()
+        {
+            foreach(Type t in items)
+            {
+                yield return t;
+            }
+        }
 
         IEnumerator IEnumerable.GetEnumerator() => items.GetEnumerator();
     }

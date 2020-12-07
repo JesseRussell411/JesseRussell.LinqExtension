@@ -10,9 +10,12 @@ namespace Debugging
         static void Main(string[] args)
         {
             Type[] ta = new Type[] { typeof(int), typeof(string), typeof(MonoEnu<int>)};
-            Type[] ta = new TypeArray().ToArray();
 
             ITypeArray ita = new Type[] { typeof(int), typeof(double) }.ToTypeArray();
+            ita = new BigTypeArray();
+
+            Type[] tb = ita.ToArray();
+            Console.WriteLine(tb.Length);
         }
     }
 }
