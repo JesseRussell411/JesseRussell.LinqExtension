@@ -3,7 +3,7 @@
 
 # Parameters:
 FILE_NAME = "TypeArray.cs"
-NAMESPACE = "ExtendedTyping"
+NAMESPACE = "JesseRussell.LinqExtension"
 STRUCT_NAME = "TypeArray"
 TYPE_PARAMETER_COUNT = 32
 #
@@ -72,7 +72,7 @@ for i in range(0, TYPE_PARAMETER_COUNT):
     #
 
     # Struct declaration:
-    output.write(INDENT + "public struct " + FULL_NAME + " : ITypeArray\n" +
+    output.write(INDENT + "public readonly struct " + FULL_NAME + " : ITypeArray\n" +
                  INDENT + "{\n")
     #
 

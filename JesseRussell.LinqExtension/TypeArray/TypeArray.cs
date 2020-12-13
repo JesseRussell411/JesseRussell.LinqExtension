@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 namespace JesseRussell.LinqExtension
 {
-    public struct TypeArray<T0> : ITypeArray
+    public readonly struct TypeArray<T0> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -25,7 +25,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 1;
         public static implicit operator Type[](TypeArray<T0> ta) => new Type[] {typeof(T0) };
     }
-    public struct TypeArray<T0, T1> : ITypeArray
+    public readonly struct TypeArray<T0, T1> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -46,7 +46,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 2;
         public static implicit operator Type[](TypeArray<T0, T1> ta) => new Type[] {typeof(T0), typeof(T1) };
     }
-    public struct TypeArray<T0, T1, T2> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -67,7 +67,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 3;
         public static implicit operator Type[](TypeArray<T0, T1, T2> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2) };
     }
-    public struct TypeArray<T0, T1, T2, T3> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -90,7 +90,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 4;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -113,7 +113,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 5;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -136,7 +136,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 6;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -161,7 +161,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 7;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -186,7 +186,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 8;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -211,7 +211,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 9;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -238,7 +238,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 10;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -265,7 +265,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 11;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -292,7 +292,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 12;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -321,7 +321,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 13;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -350,7 +350,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 14;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -379,7 +379,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 15;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -410,7 +410,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 16;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -441,7 +441,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 17;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -472,7 +472,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 18;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -505,7 +505,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 19;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -538,7 +538,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 20;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -571,7 +571,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 21;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -606,7 +606,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 22;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -641,7 +641,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 23;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -676,7 +676,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 24;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -713,7 +713,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 25;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23), typeof(T24) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -750,7 +750,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 26;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23), typeof(T24), typeof(T25) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -787,7 +787,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 27;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23), typeof(T24), typeof(T25), typeof(T26) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -826,7 +826,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 28;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23), typeof(T24), typeof(T25), typeof(T26), typeof(T27) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -865,7 +865,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 29;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23), typeof(T24), typeof(T25), typeof(T26), typeof(T27), typeof(T28) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -904,7 +904,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 30;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23), typeof(T24), typeof(T25), typeof(T26), typeof(T27), typeof(T28), typeof(T29) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
@@ -945,7 +945,7 @@ namespace JesseRussell.LinqExtension
         public int Length => 31;
         public static implicit operator Type[](TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30> ta) => new Type[] {typeof(T0), typeof(T1), typeof(T2), typeof(T3), typeof(T4), typeof(T5), typeof(T6), typeof(T7), typeof(T8), typeof(T9), typeof(T10), typeof(T11), typeof(T12), typeof(T13), typeof(T14), typeof(T15), typeof(T16), typeof(T17), typeof(T18), typeof(T19), typeof(T20), typeof(T21), typeof(T22), typeof(T23), typeof(T24), typeof(T25), typeof(T26), typeof(T27), typeof(T28), typeof(T29), typeof(T30) };
     }
-    public struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30, T31> : ITypeArray
+    public readonly struct TypeArray<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30, T31> : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator()
         {
