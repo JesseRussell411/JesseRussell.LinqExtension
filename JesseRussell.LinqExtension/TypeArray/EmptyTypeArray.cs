@@ -6,7 +6,7 @@ using System.Text;
 
 namespace JesseRussell.LinqExtension
 {
-    public struct TypeArray : ITypeArray
+    public readonly struct TypeArray : ITypeArray
     {
         public IEnumerator<Type> GetEnumerator() => Enumerable.Empty<Type>().GetEnumerator();
 

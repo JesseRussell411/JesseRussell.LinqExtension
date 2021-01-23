@@ -1,5 +1,6 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System;
 
 using JesseRussell.LinqExtension;
 
@@ -9,13 +10,20 @@ namespace Debugging
     {
         static void Main(string[] args)
         {
-            Type[] ta = new Type[] { typeof(int), typeof(string), typeof(MonoEnu<int>)};
+            Dictionary<char, int> cCount = new Dictionary<char, int>();
 
-            ITypeArray ita = new Type[] { typeof(int), typeof(double) }.ToTypeArray();
-            ita = new BigTypeArray();
+            string s = "the quick brown fox jumps over the lazy dog";
 
-            Type[] tb = ita.ToArray();
-            Console.WriteLine(tb.Length);
+
+            foreach(char c in s)
+            {
+                cCount.EnsureKey(c, 0);
+                cCount[c]++;
+            }
+
+            Console.WriteLine(
+                cCount.OrderBy(p => p.Key).Select(p => $"{p.Key} {p.Value}").Aggregate((t, c) => $"{t}\n{c}")
+                );
         }
     }
 }

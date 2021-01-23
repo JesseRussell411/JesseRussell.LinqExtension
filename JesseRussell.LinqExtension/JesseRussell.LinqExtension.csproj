@@ -14,7 +14,7 @@ MonoEnu: An enumerable struct, whith a single element to enumerate over.</Descri
     <RepositoryType>git</RepositoryType>
     <PackageTags>Linq Enumerable Type TypeArray</PackageTags>
     <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
 </Project>

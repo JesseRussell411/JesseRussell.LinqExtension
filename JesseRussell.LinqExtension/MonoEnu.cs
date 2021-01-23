@@ -7,7 +7,7 @@ namespace JesseRussell.LinqExtension
     /// An immutable enumerable struct that stores and enumerates over a single item.
     /// </summary>
     /// <typeparam name="T">The type of the item stored.</typeparam>
-    public struct MonoEnu<T> : IEnumerable<T>
+    public readonly struct MonoEnu<T> : IEnumerable<T>
     {
         /// <summary>
         /// The item stored
