@@ -24,6 +24,8 @@ namespace Debugging
             Console.WriteLine(
                 cCount.OrderBy(p => p.Key).Select(p => $"{p.Key} {p.Value}").Aggregate((t, c) => $"{t}\n{c}")
                 );
+
+            Dictionary<char, int> test = new Dictionary<char, int>();
         }
     }
 }

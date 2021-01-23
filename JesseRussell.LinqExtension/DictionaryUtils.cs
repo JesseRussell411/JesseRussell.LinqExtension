@@ -22,5 +22,12 @@ namespace JesseRussell.LinqExtension
                 return false;
             }
         }
+
+        public static void Fill<K, V>(this IDictionary<K, V> dict, IEnumerable<KeyValuePair<K, V>> collection) { foreach (KeyValuePair<K, V> p in collection) dict.Add(p); }
+        public static void Refill<K, V>(this IDictionary<K, V> dict, IEnumerable<KeyValuePair<K, V>> collection)
+        {
+            dict.Clear();
+            dict.Fill(collection);
+        }
     }
 }
