@@ -12,6 +12,5 @@ namespace JesseRussell.LinqExtension
         public static ITypeArray ToTypeArray(this IEnumerable<Type> self) => new BigTypeArray(self.ToArray());
         public static HashSet<T> ToHashSet<T>(this IEnumerable<T> stream) => new HashSet<T>(stream);
         public static SortedSet<T> ToSortedSet<T>(this IEnumerable<T> stream) => new SortedSet<T>(stream);
-        
     }
 }
