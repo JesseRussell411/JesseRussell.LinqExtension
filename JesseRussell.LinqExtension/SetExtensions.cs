@@ -4,7 +4,7 @@ using System.Text;
 
 namespace JesseRussell.LinqExtension
 {
-    public static class SetUtils
+    public static class SetExtensions
     {
         public static void Fill<T>(this ISet<T> set, IEnumerable<T> collection) { foreach (T i in collection) set.Add(i); }
 

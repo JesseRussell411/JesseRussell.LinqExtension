@@ -10,19 +10,18 @@ namespace Debugging
     {
         static void Main(string[] args)
         {
-            "bob".DoOntoSelf(Console.WriteLine);
-            "steven".DoOntoSelf(Console.Write);
-            Console.WriteLine(Enumerable.Range(1, 42).Select(n => $"{ 2 * n}").Aggregate((p, c) => $"{p}, {c}"));
-            var roci = Array.AsReadOnly(Enumerable.Range(1, 42).ToArray());
-            var roci2 = Enumerable.Range(1, 42).ToArray().Enumerate().Select(ia => new HashSet<int>(ia)).First();
-            var roci2 = Enumerable.Range(1, 42).ToArray().DoOntoSelf(ia => new HashSet<int>(ia));
-            Console.ReadLine();
-            //Dictionary<char, int> cCount = new Dictionary<char, int>();
+            Dictionary<char, int> cCount = new Dictionary<char, int>();
 
-            //string s = "the quick brown fox jumps over the lazy dog";
+            string s = "the quick brown fox jumps over the lazy dog";
+
+            s.DoToSelves(c => { cCount.EnsureKey(c, 0); cCount[c]++; });
+            cCount.OrderBy(p => p.Key).DoToSelves(p => $"{p.Key} {p.Value}".PrintSelf());
 
 
-            //foreach(char c in s)
+            void doNothing(char c) { }
+            'a'.DoToSelf(doNothing).PrintSelf();
+
+            //foreach (char c in s)
             //{
             //    cCount.EnsureKey(c, 0);
             //    cCount[c]++;
