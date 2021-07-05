@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JesseRussell.LinqExtension", "JesseRussell.LinqExtension\JesseRussell.LinqExtension.csproj", "{87AD5F69-EA1F-49D9-AB59-6CEFDA7B7033}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JesseRussell.LinqExtensions", "JesseRussell.LinqExtension\JesseRussell.LinqExtensions.csproj", "{87AD5F69-EA1F-49D9-AB59-6CEFDA7B7033}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging", "Debugging\Debugging.csproj", "{65CE7A34-3185-48BA-8BB0-24F5BEBAFB31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Debugging", "Debugging\Debugging.csproj", "{65CE7A34-3185-48BA-8BB0-24F5BEBAFB31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
